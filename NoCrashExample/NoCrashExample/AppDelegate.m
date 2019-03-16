@@ -9,7 +9,7 @@
 #import "AppDelegate.h"
 #import <NoCrash/NoCrash.h>
 
-@interface AppDelegate ()
+@interface AppDelegate ()<NCNoCrashManagerDelegate>
 
 @end
 
@@ -18,7 +18,19 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    
+    NCNoCrashManager *manager = [NCNoCrashManager shareManager];
+    manager.delegate = self;
+    [manager noCrashEnable:YES];
+    
     return YES;
+}
+
+
+#pragma mark - NCNoCrashManagerDelegate
+- (void)noCrashManager:(NCNoCrashManager *)manager didInterceptCrashIssue:(NSString *)issue {
+    NSLog(@"Example:%@",issue);
 }
 
 

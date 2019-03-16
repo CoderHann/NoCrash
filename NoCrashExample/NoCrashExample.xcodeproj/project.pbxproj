@@ -14,6 +14,7 @@
 		FCEB8EAE223BABDC00C58656 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCEB8EAC223BABDC00C58656 /* LaunchScreen.storyboard */; };
 		FCEB8EB1223BABDC00C58656 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FCEB8EB0223BABDC00C58656 /* main.m */; };
 		FCEB8EB9223BAC4A00C58656 /* NoCrash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCEB8EB8223BAC4A00C58656 /* NoCrash.framework */; };
+		FCEB8EC4223BB48500C58656 /* AView.m in Sources */ = {isa = PBXBuildFile; fileRef = FCEB8EC3223BB48400C58656 /* AView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,8 @@
 		FCEB8EAF223BABDC00C58656 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FCEB8EB0223BABDC00C58656 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FCEB8EB8223BAC4A00C58656 /* NoCrash.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NoCrash.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCEB8EC2223BB48400C58656 /* AView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AView.h; sourceTree = "<group>"; };
+		FCEB8EC3223BB48400C58656 /* AView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +69,8 @@
 				FCEB8EA2223BABDB00C58656 /* AppDelegate.m */,
 				FCEB8EA4223BABDB00C58656 /* ViewController.h */,
 				FCEB8EA5223BABDB00C58656 /* ViewController.m */,
+				FCEB8EC2223BB48400C58656 /* AView.h */,
+				FCEB8EC3223BB48400C58656 /* AView.m */,
 				FCEB8EA7223BABDB00C58656 /* Main.storyboard */,
 				FCEB8EAA223BABDC00C58656 /* Assets.xcassets */,
 				FCEB8EAC223BABDC00C58656 /* LaunchScreen.storyboard */,
@@ -155,6 +160,7 @@
 			files = (
 				FCEB8EA6223BABDB00C58656 /* ViewController.m in Sources */,
 				FCEB8EB1223BABDC00C58656 /* main.m in Sources */,
+				FCEB8EC4223BB48500C58656 /* AView.m in Sources */,
 				FCEB8EA3223BABDB00C58656 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -304,6 +310,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.excellentcoder.NoCrashExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -321,6 +328,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.excellentcoder.NoCrashExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";

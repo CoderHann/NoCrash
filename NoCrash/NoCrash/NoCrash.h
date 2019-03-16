@@ -16,4 +16,5 @@ FOUNDATION_EXPORT const unsigned char NoCrashVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <NoCrash/PublicHeader.h>
 
-
+#import "NCNoCrashManager.h"
+#import "NSObject+NoCrash.h"

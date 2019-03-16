@@ -8,9 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		FCEB8E8F223BAB4900C58656 /* NoCrash.h in Headers */ = {isa = PBXBuildFile; fileRef = FCEB8E8D223BAB4900C58656 /* NoCrash.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FCEB8EBC223BACD500C58656 /* NCNoCrashManager.h in Headers */ = {isa = PBXBuildFile; fileRef = FCEB8EBA223BACD400C58656 /* NCNoCrashManager.h */; };
+		FCEB8EBC223BACD500C58656 /* NCNoCrashManager.h in Headers */ = {isa = PBXBuildFile; fileRef = FCEB8EBA223BACD400C58656 /* NCNoCrashManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FCEB8EBD223BACD500C58656 /* NCNoCrashManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FCEB8EBB223BACD500C58656 /* NCNoCrashManager.m */; };
-		FCEB8EC0223BACE900C58656 /* NSObject+NoCrash.h in Headers */ = {isa = PBXBuildFile; fileRef = FCEB8EBE223BACE900C58656 /* NSObject+NoCrash.h */; };
+		FCEB8EC0223BACE900C58656 /* NSObject+NoCrash.h in Headers */ = {isa = PBXBuildFile; fileRef = FCEB8EBE223BACE900C58656 /* NSObject+NoCrash.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FCEB8EC1223BACE900C58656 /* NSObject+NoCrash.m in Sources */ = {isa = PBXBuildFile; fileRef = FCEB8EBF223BACE900C58656 /* NSObject+NoCrash.m */; };
 /* End PBXBuildFile section */
 
@@ -290,6 +290,7 @@
 				);
 				MACH_O_TYPE = staticlib;
 				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.excellentcoder.NoCrash;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -316,6 +317,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.excellentcoder.NoCrash;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;

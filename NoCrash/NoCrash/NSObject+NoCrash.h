@@ -11,7 +11,11 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface NSObject (NoCrash)
+- (NSMethodSignature *)nocrash_methodSignatureForSelector:(SEL)aSelector;
 
+- (void)nocrash_forwardInvocation:(NSInvocation *)anInvocation;
+
++ (void)needExchange;
 @end
 
 NS_ASSUME_NONNULL_END

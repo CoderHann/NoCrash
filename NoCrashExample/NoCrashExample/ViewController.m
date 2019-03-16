@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "AView.h"
 
 @interface ViewController ()
 
@@ -17,6 +18,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    AView *a = [[AView alloc] init];
+    [self.view addSubview:a];
+    [a test];
 }
 
 
