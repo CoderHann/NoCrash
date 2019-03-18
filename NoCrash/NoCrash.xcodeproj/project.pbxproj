@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FC0E18F3223CF6E900A371FD /* NSMutableArray+NoCrash.h in Headers */ = {isa = PBXBuildFile; fileRef = FC0E18F1223CF6E900A371FD /* NSMutableArray+NoCrash.h */; };
+		FC0E18F4223CF6E900A371FD /* NSMutableArray+NoCrash.m in Sources */ = {isa = PBXBuildFile; fileRef = FC0E18F2223CF6E900A371FD /* NSMutableArray+NoCrash.m */; };
 		FCEB8E8F223BAB4900C58656 /* NoCrash.h in Headers */ = {isa = PBXBuildFile; fileRef = FCEB8E8D223BAB4900C58656 /* NoCrash.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FCEB8EBC223BACD500C58656 /* NCNoCrashManager.h in Headers */ = {isa = PBXBuildFile; fileRef = FCEB8EBA223BACD400C58656 /* NCNoCrashManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FCEB8EBD223BACD500C58656 /* NCNoCrashManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FCEB8EBB223BACD500C58656 /* NCNoCrashManager.m */; };
@@ -15,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FC0E18F1223CF6E900A371FD /* NSMutableArray+NoCrash.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+NoCrash.h"; sourceTree = "<group>"; };
+		FC0E18F2223CF6E900A371FD /* NSMutableArray+NoCrash.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+NoCrash.m"; sourceTree = "<group>"; };
 		FCEB8E8A223BAB4900C58656 /* NoCrash.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NoCrash.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCEB8E8D223BAB4900C58656 /* NoCrash.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NoCrash.h; sourceTree = "<group>"; };
 		FCEB8E8E223BAB4900C58656 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -59,6 +63,8 @@
 				FCEB8EBB223BACD500C58656 /* NCNoCrashManager.m */,
 				FCEB8EBE223BACE900C58656 /* NSObject+NoCrash.h */,
 				FCEB8EBF223BACE900C58656 /* NSObject+NoCrash.m */,
+				FC0E18F1223CF6E900A371FD /* NSMutableArray+NoCrash.h */,
+				FC0E18F2223CF6E900A371FD /* NSMutableArray+NoCrash.m */,
 				FCEB8E8E223BAB4900C58656 /* Info.plist */,
 			);
 			path = NoCrash;
@@ -72,6 +78,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FCEB8EBC223BACD500C58656 /* NCNoCrashManager.h in Headers */,
+				FC0E18F3223CF6E900A371FD /* NSMutableArray+NoCrash.h in Headers */,
 				FCEB8E8F223BAB4900C58656 /* NoCrash.h in Headers */,
 				FCEB8EC0223BACE900C58656 /* NSObject+NoCrash.h in Headers */,
 			);
@@ -144,6 +151,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC0E18F4223CF6E900A371FD /* NSMutableArray+NoCrash.m in Sources */,
 				FCEB8EC1223BACE900C58656 /* NSObject+NoCrash.m in Sources */,
 				FCEB8EBD223BACD500C58656 /* NCNoCrashManager.m in Sources */,
 			);

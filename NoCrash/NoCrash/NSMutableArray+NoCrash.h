@@ -1,8 +1,8 @@
 //
-//  NSObject+NoCrash.h
+//  NSMutableArray+NoCrash.h
 //  NoCrash
 //
-//  Created by roki on 2019/3/15.
+//  Created by roki on 2019/3/16.
 //  Copyright © 2019 CoderHann. All rights reserved.
 //
 
@@ -10,8 +10,8 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface NSObject (NoCrash)
-+ (void)needExchange;
+@interface NSMutableArray (NoCrash)
++ (void)noCrashConfig;
 @end
 
 NS_ASSUME_NONNULL_END

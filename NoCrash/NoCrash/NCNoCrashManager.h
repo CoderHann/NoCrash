@@ -11,10 +11,17 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+typedef NS_ENUM(NSUInteger, NCCrashedType) {
+    NCCrashedTypeUnrecognizedSelector,//找不到方法的crash
+    NCCrashedTypeMutableArrayAddNil,//可变数组添加空数据的crash
+    NCCrashedTypeMutableArrayBadIndex,//可变数组异常索引的crash
+    NCCrashedTypeOther,
+};
+
 @protocol NCNoCrashManagerDelegate <NSObject>
 
 @optional
-- (void)noCrashManager:(NCNoCrashManager *)manager didInterceptCrashIssue:(NSString *)issue;
+- (void)noCrashManager:(NCNoCrashManager *)manager crashedWithType:(NCCrashedType)crashType threadTrace:(NSString *)threadTrace;
 
 @end
 

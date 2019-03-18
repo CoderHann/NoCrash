@@ -29,10 +29,9 @@
 
 
 #pragma mark - NCNoCrashManagerDelegate
-- (void)noCrashManager:(NCNoCrashManager *)manager didInterceptCrashIssue:(NSString *)issue {
-    NSLog(@"Example:%@",issue);
+- (void)noCrashManager:(NCNoCrashManager *)manager crashedWithType:(NCCrashedType)crashType threadTrace:(NSString *)threadTrace {
+    NSLog(@"oops app crashed!\nthreadTrace:\n%@",threadTrace);
 }
-
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

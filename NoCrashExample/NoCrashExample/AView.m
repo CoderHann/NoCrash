@@ -10,12 +10,33 @@
 
 @implementation AView
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
+- (instancetype)initWithFrame:(CGRect)frame {
+    if (self = [super initWithFrame:frame]) {
+        [self setup];
+    }
+    
+    return self;
 }
-*/
+
+- (void)setup {
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(notificationComes) name:@"NotificationA" object:nil];
+    
+    NSMutableArray *mutaArr = [NSMutableArray array];
+    id h = mutaArr[3];
+    [mutaArr addObject:[self arrObject]];
+    
+}
+
+- (id)arrObject {
+    return nil;
+}
+
+- (void)notificationComes {
+    NSLog(@"notificationComes");
+}
+
+- (void)dealloc {
+    NSLog(@"ADealloced");
+}
 
 @end
