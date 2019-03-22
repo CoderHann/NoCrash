@@ -21,20 +21,31 @@
 - (void)setup {
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(notificationComes) name:@"NotificationA" object:nil];
     
-    NSMutableArray *mutaArr = [NSMutableArray array];
-    id h = mutaArr[3];
-    [mutaArr addObject:@"A"];
+//    NSMutableArray *mutaArr = [NSMutableArray array];
+//    id h = mutaArr[3];
+//    [mutaArr addObject:@"A"];
 //    [mutaArr addObject:@"B"];
 //    [mutaArr addObject:@"C"];
-    NSString *a= @"b";
-    NSString *bb= @"cc";
-    
-    NSSet *set = [[NSSet alloc] initWithObjects:a,bb, nil];
-    NSIndexSet *indexSet = [[NSIndexSet alloc] initWithIndexesInRange:NSMakeRange(2, 3)];
-    [mutaArr removeObjectsAtIndexes:indexSet];
+//    NSString *a= @"b";
+//    NSString *bb= @"cc";
+//
+//    NSSet *set = [[NSSet alloc] initWithObjects:a,bb, nil];
+//    NSIndexSet *indexSet = [[NSIndexSet alloc] initWithIndexesInRange:NSMakeRange(2, 3)];
+//    [mutaArr removeObjectsAtIndexes:indexSet];
 //    [mutaArr removeObjectAtIndex:2];
 //    [mutaArr replaceObjectAtIndex:0 withObject:@"x"];
 //    [mutaArr removeObjectAtIndex:10];
+    
+//    NSMutableDictionary *mutableDict = [NSMutableDictionary dictionary];
+//    [mutableDict setObject:nil forKey:@"xxl"];
+//    mutableDict[@"kk"] = NULL;
+//    id l = mutableDict[@"lkj"];
+//    [mutableDict removeObjectForKey:@"asf"];
+//    [mutableDict objectForKey:@"xx"];
+    
+    NSString *str = [NSString stringWithFormat:@"123456789"];
+    
+    unichar *a = [str characterAtIndex:10];
     
     NSLog(@"");
 }

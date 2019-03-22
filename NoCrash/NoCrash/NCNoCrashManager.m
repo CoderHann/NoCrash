@@ -60,6 +60,12 @@ static NCNoCrashManager *_manager = nil;
         // 开启NSMutableArray相关的异常捕捉
         [NSMutableArray startNoCrashCatch];
         
+        // 开启NSMutableDictionary相关异常捕捉
+        [NSMutableDictionary startNoCrashCatch];
+        
+        // 开启字符串相关的crash捕捉
+        [NSString startNoCrashCatch];
+        
     }
 }
 

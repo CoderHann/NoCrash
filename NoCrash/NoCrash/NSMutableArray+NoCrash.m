@@ -23,7 +23,7 @@
         for (NSInteger index = 0; index < count; index++) {
             Method tempMethod = methodList[index];
             NSString *name = NSStringFromSelector(method_getName(tempMethod));
-            NSLog(@"%@",name);
+//            NSLog(@"%@",name);
             if ([@"insertObject:atIndex:" isEqualToString:name]) {
                 // 解决[NSMutableArray addObject:nil or NULL]的崩溃
                 //            BOOL addSuccess = class_addMethod(mutableArrClass, NSSelectorFromString(@"nocrash_insertObject:atIndex:"), class_getMethodImplementation([self class], @selector(nocrash_insertObject:atIndex:)), "v@:@Q");
