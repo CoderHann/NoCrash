@@ -23,8 +23,20 @@
     
     NSMutableArray *mutaArr = [NSMutableArray array];
     id h = mutaArr[3];
-    [mutaArr addObject:[self arrObject]];
+    [mutaArr addObject:@"A"];
+//    [mutaArr addObject:@"B"];
+//    [mutaArr addObject:@"C"];
+    NSString *a= @"b";
+    NSString *bb= @"cc";
     
+    NSSet *set = [[NSSet alloc] initWithObjects:a,bb, nil];
+    NSIndexSet *indexSet = [[NSIndexSet alloc] initWithIndexesInRange:NSMakeRange(2, 3)];
+    [mutaArr removeObjectsAtIndexes:indexSet];
+//    [mutaArr removeObjectAtIndex:2];
+//    [mutaArr replaceObjectAtIndex:0 withObject:@"x"];
+//    [mutaArr removeObjectAtIndex:10];
+    
+    NSLog(@"");
 }
 
 - (id)arrObject {

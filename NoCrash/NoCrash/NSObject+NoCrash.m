@@ -7,27 +7,31 @@
 //
 
 #import "NSObject+NoCrash.h"
-#import <objc/message.h>
 #import "NCNoCrashManager.h"
 
 @implementation NSObject (NoCrash)
 
-+ (void)needExchange {
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        
-        Method originForward = class_getInstanceMethod(self, @selector(forwardInvocation:));
-        Method changedForward = class_getInstanceMethod(self,@selector(nocrash_forwardInvocation:));
-        
-        method_exchangeImplementations(originForward,changedForward);
-        
-        
-        Method originM = class_getInstanceMethod(self, @selector(methodSignatureForSelector:));
-        Method changedM = class_getInstanceMethod(self,@selector(nocrash_methodSignatureForSelector:));
-        
-        method_exchangeImplementations(originM,changedM);
-        
-    });
+#pragma mark - PublicMethos
+
++ (void)startNoCrashCatch {
+    
+}
+
++ (void)stopNoCrashCatch {
+    
+}
+
++ (void)catchUnrecognizedSelector {
+    Method originForward = class_getInstanceMethod(self, @selector(forwardInvocation:));
+    Method changedForward = class_getInstanceMethod(self,@selector(nocrash_forwardInvocation:));
+    
+    method_exchangeImplementations(originForward,changedForward);
+    
+    
+    Method originM = class_getInstanceMethod(self, @selector(methodSignatureForSelector:));
+    Method changedM = class_getInstanceMethod(self,@selector(nocrash_methodSignatureForSelector:));
+    
+    method_exchangeImplementations(originM,changedM);
 }
 
 - (NSMethodSignature *)nocrash_methodSignatureForSelector:(SEL)aSelector {

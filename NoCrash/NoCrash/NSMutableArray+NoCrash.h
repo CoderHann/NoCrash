@@ -11,7 +11,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface NSMutableArray (NoCrash)
-+ (void)noCrashConfig;
+
 @end
 
 NS_ASSUME_NONNULL_END
