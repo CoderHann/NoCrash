@@ -23,6 +23,9 @@
     [self.view addSubview:a];
     _a = a;
     [a test];
+    
+    
+    
 }
 
 

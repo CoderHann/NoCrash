@@ -43,9 +43,31 @@
 //    [mutableDict removeObjectForKey:@"asf"];
 //    [mutableDict objectForKey:@"xx"];
     
-    NSString *str = [NSString stringWithFormat:@"123456789"];
+//    NSString *str = [NSString stringWithFormat:@"你好呀xxxxxx"];
+//    [str characterAtIndex:100];
+//    [str substringFromIndex:100];
+//    [str substringToIndex:100];
+//    [str substringWithRange:NSMakeRange(0, 100)];
+//
+//    NSString *strTagged = [NSString stringWithFormat:@"123456789"];
+//    [strTagged characterAtIndex:100];
+//    [strTagged substringFromIndex:100];
+//    [strTagged substringToIndex:100];
+//    [strTagged substringWithRange:NSMakeRange(0, 100)];
+//
+//    NSString *strConstant = @"123456789";
+//    [strConstant characterAtIndex:100];
+//    [strConstant substringFromIndex:100];
+//    [strConstant substringToIndex:100];
+//    [strConstant substringWithRange:NSMakeRange(0, 100)];
     
-    unichar *a = [str characterAtIndex:10];
+    NSMutableString *mStr = [[NSMutableString alloc] init];
+    [mStr characterAtIndex:100];
+    [mStr substringFromIndex:100];
+    [mStr substringToIndex:100];
+    [mStr substringWithRange:NSMakeRange(0, 100)];
+    [mStr insertString:@"nihoa" atIndex:20];
+    
     
     NSLog(@"");
 }
