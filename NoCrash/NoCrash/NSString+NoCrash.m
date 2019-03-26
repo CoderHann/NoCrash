@@ -60,11 +60,6 @@
                 
                 Method changed = class_getInstanceMethod(self, @selector(nocrash1_substringWithRange:));
                 method_exchangeImplementations(tempMethod, changed);
-            } else if ([@"insertString:atIndex:" isEqualToString:name]) {
-                // 解决index异常下的crash
-                
-                Method changed = class_getInstanceMethod(self, @selector(nocrash1_substringWithRange:));
-                method_exchangeImplementations(tempMethod, changed);
             }
 
         }
@@ -93,11 +88,6 @@
 
         }
     }
-}
-
-#pragma mark - insertString:atIndex:
-- (void)insertString:(NSString *)aString atIndex:(NSUInteger)loc {
-    
 }
 
 #pragma mark - substringWithRange

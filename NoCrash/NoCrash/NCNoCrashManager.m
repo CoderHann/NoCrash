@@ -67,7 +67,7 @@ static NCNoCrashManager *_manager = nil;
         [NSString startNoCrashCatch];
         
         // 开启可变字符串的crash捕捉
-        [NSMutableArray startNoCrashCatch];
+        [NSMutableString startNoCrashCatch];
     }
 }
 
