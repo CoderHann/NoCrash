@@ -21,7 +21,9 @@
 - (void)setup {
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(notificationComes) name:@"NotificationA" object:nil];
     
-//    NSMutableArray *mutaArr = [NSMutableArray array];
+    NSMutableArray *mutaArr = [NSMutableArray array];
+    [@[] firstObject];
+    NSLog(@"xxx");
 //    id h = mutaArr[3];
 //    [mutaArr addObject:@"A"];
 //    [mutaArr addObject:@"B"];
@@ -43,7 +45,8 @@
 //    [mutableDict removeObjectForKey:@"asf"];
 //    [mutableDict objectForKey:@"xx"];
     
-    NSString *str = [NSString stringWithFormat:@"你好呀xxxxxx"];
+//    NSString *str = [NSString stringWithFormat:@"你好呀xxxxxx"];
+    NSString *str = [[NSString alloc] initWithString:[NSString stringWithFormat:@"kkll"]];
     [str characterAtIndex:100];
     [str substringFromIndex:100];
     [str substringToIndex:100];

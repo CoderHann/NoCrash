@@ -57,6 +57,9 @@ static NCNoCrashManager *_manager = nil;
         // 开启unrecognized selector类型的异常捕捉
         [NSObject catchUnrecognizedSelector];
         
+        // 开启NSArray相关异常捕捉
+        [NSArray startNoCrashCatch];
+        
         // 开启NSMutableArray相关的异常捕捉
         [NSMutableArray startNoCrashCatch];
         

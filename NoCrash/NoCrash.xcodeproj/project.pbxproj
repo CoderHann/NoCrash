@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		FC0E18F3223CF6E900A371FD /* NSMutableArray+NoCrash.h in Headers */ = {isa = PBXBuildFile; fileRef = FC0E18F1223CF6E900A371FD /* NSMutableArray+NoCrash.h */; };
 		FC0E18F4223CF6E900A371FD /* NSMutableArray+NoCrash.m in Sources */ = {isa = PBXBuildFile; fileRef = FC0E18F2223CF6E900A371FD /* NSMutableArray+NoCrash.m */; };
+		FC5CA8ED225B564B00D85147 /* NSArray+NoCrash.h in Headers */ = {isa = PBXBuildFile; fileRef = FC5CA8EB225B564B00D85147 /* NSArray+NoCrash.h */; };
+		FC5CA8EE225B564B00D85147 /* NSArray+NoCrash.m in Sources */ = {isa = PBXBuildFile; fileRef = FC5CA8EC225B564B00D85147 /* NSArray+NoCrash.m */; };
 		FC6208132244D267002227A9 /* NSMutableDictionary+NoCrash.h in Headers */ = {isa = PBXBuildFile; fileRef = FC6208112244D267002227A9 /* NSMutableDictionary+NoCrash.h */; };
 		FC6208142244D267002227A9 /* NSMutableDictionary+NoCrash.m in Sources */ = {isa = PBXBuildFile; fileRef = FC6208122244D267002227A9 /* NSMutableDictionary+NoCrash.m */; };
 		FC6208172244D84F002227A9 /* NSString+NoCrash.h in Headers */ = {isa = PBXBuildFile; fileRef = FC6208152244D84F002227A9 /* NSString+NoCrash.h */; };
@@ -25,6 +27,8 @@
 /* Begin PBXFileReference section */
 		FC0E18F1223CF6E900A371FD /* NSMutableArray+NoCrash.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+NoCrash.h"; sourceTree = "<group>"; };
 		FC0E18F2223CF6E900A371FD /* NSMutableArray+NoCrash.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+NoCrash.m"; sourceTree = "<group>"; };
+		FC5CA8EB225B564B00D85147 /* NSArray+NoCrash.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSArray+NoCrash.h"; sourceTree = "<group>"; };
+		FC5CA8EC225B564B00D85147 /* NSArray+NoCrash.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+NoCrash.m"; sourceTree = "<group>"; };
 		FC6208112244D267002227A9 /* NSMutableDictionary+NoCrash.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+NoCrash.h"; sourceTree = "<group>"; };
 		FC6208122244D267002227A9 /* NSMutableDictionary+NoCrash.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+NoCrash.m"; sourceTree = "<group>"; };
 		FC6208152244D84F002227A9 /* NSString+NoCrash.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+NoCrash.h"; sourceTree = "<group>"; };
@@ -75,6 +79,8 @@
 				FCEB8EBB223BACD500C58656 /* NCNoCrashManager.m */,
 				FCEB8EBE223BACE900C58656 /* NSObject+NoCrash.h */,
 				FCEB8EBF223BACE900C58656 /* NSObject+NoCrash.m */,
+				FC5CA8EB225B564B00D85147 /* NSArray+NoCrash.h */,
+				FC5CA8EC225B564B00D85147 /* NSArray+NoCrash.m */,
 				FC0E18F1223CF6E900A371FD /* NSMutableArray+NoCrash.h */,
 				FC0E18F2223CF6E900A371FD /* NSMutableArray+NoCrash.m */,
 				FC6208112244D267002227A9 /* NSMutableDictionary+NoCrash.h */,
@@ -95,6 +101,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC5CA8ED225B564B00D85147 /* NSArray+NoCrash.h in Headers */,
 				FCEB8EBC223BACD500C58656 /* NCNoCrashManager.h in Headers */,
 				FC6208172244D84F002227A9 /* NSString+NoCrash.h in Headers */,
 				FC6208132244D267002227A9 /* NSMutableDictionary+NoCrash.h in Headers */,
@@ -174,6 +181,7 @@
 			files = (
 				FC6208182244D84F002227A9 /* NSString+NoCrash.m in Sources */,
 				FC6208222248B39E002227A9 /* NSMutableString+NoCrash.m in Sources */,
+				FC5CA8EE225B564B00D85147 /* NSArray+NoCrash.m in Sources */,
 				FC0E18F4223CF6E900A371FD /* NSMutableArray+NoCrash.m in Sources */,
 				FCEB8EC1223BACE900C58656 /* NSObject+NoCrash.m in Sources */,
 				FC6208142244D267002227A9 /* NSMutableDictionary+NoCrash.m in Sources */,
